@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Agri Nature AI — traditional Tamil farming, modern agricultural engineering, nature protection and AI farm technology." />
+  <title>Agri Nature AI | Traditional Wisdom × Modern Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span>🌾</span><div><b>Agri Nature AI</b><small>மரபு • அறிவியல் • தொழில்நுட்பம்</small></div></a>
+  <nav><a href="#knowledge">Knowledge</a><a href="#heritage">Tamil Heritage</a><a href="#machines">Machinery</a><a href="#farm-ai">Farm AI</a><a href="#sources">Sources</a></nav>
+  <button class="lang" id="langBtn">தமிழ்</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">ANCIENT WISDOM × MODERN SCIENCE × AI</span>
+    <h1>Build farms that <em>work with nature.</em></h1>
+    <p>One platform for agriculture, Tamil traditional farming knowledge, agricultural engineering, machinery, seeds, fertilizers, conservation and AI-powered farm ideas.</p>
+    <div class="hero-actions"><a class="btn primary" href="#farm-ai">📸 Analyse My Land</a><a class="btn ghost" href="#heritage">🏺 Explore Tamil Heritage</a></div>
+    <div class="trust-row"><span>✓ Evidence-labelled</span><span>✓ Farmer-focused</span><span>✓ Traditional + Modern</span></div>
+  </div>
+  <div class="hero-orbit"><div class="orb center">🌱<small>Smart Farm</small></div><div class="orb o1">💧<small>Water</small></div><div class="orb o2">🤖<small>AI</small></div><div class="orb o3">🌿<small>Nature</small></div><div class="orb o4">🏺<small>Heritage</small></div></div>
+</section>
+
+<section class="principle"><div><span class="eyebrow">OUR PRINCIPLE</span><h2>Technology should protect nature — not replace it.</h2></div><p>Compare a traditional practice, understand its evidence, then use appropriate science and technology to improve resource efficiency. Traditional claims are labelled as documented practice, while scientific recommendations are linked to authoritative sources.</p></section>
+
+<section id="knowledge" class="section"><div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>A–Z Agriculture Knowledge</h2></div><input id="search" placeholder="Search crops, tools, soil, irrigation..." /></div><div id="knowledgeGrid" class="card-grid"></div></section>
+
+<section id="heritage" class="section split"><div><span class="eyebrow">தமிழர் மரபு வேளாண்மை</span><h2>Traditional Tamil farming, documented—not romanticised.</h2><p>TNAU documents Indigenous Technical Knowledge across crops, operations and districts. We preserve those records and clearly distinguish farmer observations, beliefs and scientifically validated practices.</p><div class="heritage-tabs"><button class="active" data-mode="traditional">🏺 Traditional</button><button data-mode="modern">🤖 Modern</button><button data-mode="bridge">🔬 Bridge</button></div><div id="heritageContent" class="feature-box"></div></div><div class="heritage-art"><div class="field-lines"></div><div class="tamil-quote">“உழுதுண்டு வாழ்வாரே வாழ்வார்”<small>திருக்குறள் 1031</small></div></div></section>
+
+<section id="machines" class="section alt"><div class="section-head"><div><span class="eyebrow">AGRICULTURAL ENGINEERING</span><h2>Which machine should I use?</h2></div><select id="machineFilter"><option value="all">All operations</option><option value="tillage">Tillage</option><option value="sowing">Sowing</option><option value="irrigation">Irrigation</option><option value="harvest">Harvesting</option><option value="smart">Smart farming</option></select></div><div id="machineGrid" class="card-grid"></div></section>
+
+<section class="section"><div class="section-head"><div><span class="eyebrow">INPUT KNOWLEDGE</span><h2>Fertilizers & Seeds</h2></div></div><div class="two-grid"><article class="info-card"><span>🧪</span><h3>Fertilizer Explorer</h3><p>Understand nutrient role, composition, crop context and safe-use principles. Site-specific quantities should come from soil tests and authoritative recommendations.</p><div class="chips"><i>N</i><i>P</i><i>K</i><i>Micronutrients</i><i>Organic</i></div></article><article class="info-card"><span>🌱</span><h3>Seed & Variety Explorer</h3><p>Compare documented traditional varieties with modern released varieties. Record duration, region, traits and official source instead of relying on unverified claims.</p><div class="chips"><i>Rice</i><i>Millets</i><i>Pulses</i><i>Vegetables</i><i>Horticulture</i></div></article></div></section>
+
+<section id="farm-ai" class="section ai-section"><div class="section-head"><div><span class="eyebrow">SIGNATURE FEATURE</span><h2>📸 Build Technology for My Land</h2><p>Upload a field image and add what you know. This prototype produces a structured concept plan; it does not pretend a photo alone can diagnose soil or prescribe chemicals.</p></div></div><div class="ai-workspace"><div class="upload"><label for="landPhoto" class="drop"><span id="previewIcon">📷</span><b>Upload land photo</b><small>JPG, PNG or WEBP</small></label><input id="landPhoto" type="file" accept="image/*"><div class="form-row"><label>Area (acres)<input id="area" type="number" min="0" step="0.1" value="2"></label><label>Water source<select id="water"><option>Available</option><option>Limited</option><option>Rainfed</option></select></label></div><label>Goal<select id="goal"><option>Save water</option><option>Reduce labour</option><option>Crop monitoring</option><option>Build a smart farm</option></select></label><button class="btn primary full" id="analyse">Generate Farm Technology Plan</button></div><div id="aiResult" class="ai-result"><div class="empty">Your plan will appear here.<br><small>Photo + land details → observations → traditional option → modern option → machine concept → nature safeguards.</small></div></div></div></section>
+
+<section class="section awareness"><div><span class="eyebrow">PUBLIC AWARENESS</span><h2>Learn by doing — step by step.</h2></div><div class="steps"><article><b>01</b><h3>Observe</h3><p>Understand land, water, soil, biodiversity and the farmer's real problem.</p></article><article><b>02</b><h3>Learn</h3><p>Compare traditional knowledge with scientific evidence and local recommendations.</p></article><article><b>03</b><h3>Design</h3><p>Choose the lowest-impact technology that solves the actual problem.</p></article><article><b>04</b><h3>Measure</h3><p>Track water, energy, soil health, cost and environmental outcomes.</p></article></div></section>
+
+<section id="sources" class="section sources"><div class="section-head"><div><span class="eyebrow">SOURCE-FIRST KNOWLEDGE</span><h2>Verified source library</h2><p>These are the foundation sources for the first version. New entries should keep the same source-first format.</p></div></div><div id="sourceGrid" class="source-grid"></div></section>
+
+<section class="section roadmap"><span class="eyebrow">NEXT BUILD LAYERS</span><h2>From knowledge portal to real farm intelligence.</h2><div class="roadmap-grid"><span>🌦️ Live weather & agro-advisory</span><span>💰 Live mandi/eNAM prices</span><span>🗺️ GIS farm mapping</span><span>🤖 Gemini/AI assistant</span><span>📡 ESP32 / IoT dashboard</span><span>🚜 Machinery price & subsidy links</span><span>🌱 Seed database</span><span>📚 Tamil knowledge archive</span></div></section>
+</main>
+
+<footer><div><b>🌾 Agri Nature AI</b><p>Ancient wisdom. Modern science. Intelligent agriculture.</p></div><div><a href="#sources">Sources</a><a href="#heritage">Heritage</a><a href="#farm-ai">Farm AI</a></div><small>Educational platform. Always verify crop, fertilizer, pesticide, machinery and engineering decisions with current official/local guidance.</small></footer>
+<script src="app.js"></script>
+</body>
+</html>
