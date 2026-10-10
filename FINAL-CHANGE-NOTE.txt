@@ -1,0 +1,1 @@
+Requested UI: remove mobile bottom navigation; machinery cards should open full details on touch; provide additional languages. Language system file and machinery enhancements are included in the repository.
