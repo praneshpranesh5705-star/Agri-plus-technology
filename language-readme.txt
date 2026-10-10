@@ -1,0 +1,1 @@
+English + Tamil + Hindi language support added. Machinery cards are designed for touch/click to open full details.
