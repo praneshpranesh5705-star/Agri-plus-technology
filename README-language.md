@@ -1,0 +1,1 @@
+The site supports English, Tamil, and Hindi through i18n.js. Machinery cards are touch/click interactive and show detailed information and sources.
