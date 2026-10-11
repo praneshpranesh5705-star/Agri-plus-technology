@@ -1,0 +1,1 @@
+(()=>{const f=()=>{const a=document.querySelector('.side-item[data-target="market"]');if(a){a.href='#live-data';a.dataset.target='live-data'}};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f()})();
